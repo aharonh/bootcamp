@@ -65,7 +65,7 @@ services:
 
   webserver:
     container_name: audio-webserver
-    image: milvusbootcamp/audio-search-server:2.0
+    image: milvusbootcamp/audio-search-server:2.0.4
     networks:
       app_net:
         ipv4_address: 172.16.23.12
@@ -83,7 +83,7 @@ services:
 
   webclient:
     container_name: audio-webclient
-    image: milvusbootcamp/audio-search-client:2.0
+    image: milvusbootcamp/audio-search-client:2.0.1
     networks:
       app_net:
         ipv4_address: 172.16.23.13
